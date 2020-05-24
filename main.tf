@@ -11,7 +11,6 @@ data "oci_core_images" "oraclelinux" {
   compartment_id           = var.tenancy_ocid
   operating_system         = var.operating_system
   operating_system_version = var.operating_system_version
-  image_id                 = var.test_image_id
 
   # exclude GPU specific images
   filter {
